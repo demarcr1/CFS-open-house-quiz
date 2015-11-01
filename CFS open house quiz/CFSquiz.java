@@ -7,6 +7,7 @@ import javafx.scene.Scene ;
 import javafx.scene.control.Button ; 
 import javafx.scene.layout.HBox ; 
 import javafx.scene.layout.VBox ; 
+import javafx.scene.layout.GridPane
 import javafx.scene.text.Text ; 
 import javafx.stage.Stage ; 
 
@@ -20,24 +21,33 @@ public class CFSquiz extends Application {
 	
 	//make the container pane for the user to choose from the different options 
 	//homemenu_content pulls in homemenu_worldRelgions, homemenu_christiantity, homemenu_jewish, homemenue_islam, and homemenu_hindu
-	HBox homemenu_content = new HBox() ; 
+	GridPane homemenu_content = new GridPane() ; 
 	
-	//make the pane for each category 
 	
-	//world religions 
-	VBox homemenu_worldRelgions = new VBox() ; 
-	//christianity 
-	VBox homemenu_christianity = new VBox() ; 
-	//judiasm 
-	VBox homemenu_jewish = new VBox() ; 
-	//islam
-	VBox homemenu_islam = new VBox() ; 
-	//hindu 
-	VBox homemenu_hindu = new VBox() ; 
+	//making the text for everything 
+	Text homemenu_title = new Text("ERAU Center for Faith and Spirituality") ; 
+	Text homemenu_subtitle = new Text("Test your knowledge on religion!") ; 
 	
-	//makeing the text for everything 
+	//making the buttons for the homemenu 
+	//button for world relgions 
+	Button worldrelgionsquiz = new Button("World Religions Quiz") ; 
+	//button for christianity 
+	Button christianityquiz = new Button("Christianity Quiz") ;
+	//button for judiasm 
+	Button judiasmquiz = new Button("Judiasm Quiz") ; 
+	//button for islam 
+	Button islamquiz = new Button("Islam Quiz") ; 
+	//button for hindu 
+	Button hinduquiz = new Button("Hindu Quiz") ; 
 	
-	Text homemenu_title = new Text("Center for Faith and Spirituality") ; 
-	Text homemenu_subtitle = new Text("Religious Knowledge Quiz") ; 
+	public CFSquiz(){ 
+	}
+	
+	//making the gui work 
+	
+	@Override 
+	public void start(Stage primaryStage) throws Exception {
+		
+	}
 	
 }
